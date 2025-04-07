@@ -1,0 +1,96 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+
+header{
+  font-size: large;
+  padding: 15px;
+  background-color: black;
+  flex-wrap: wrap;
+}
+
+
+
+.menu{
+  text-align: center;
+}
+
+
+
+h3{
+  margin-top: 10%;
+  
+}
+
+h3.donaters{
+  margin-top: 5%;
+  position: absolute;
+}
+
+.donaters {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform:translate(-50%, -50%);
+
+}
+
+body {
+  text-align: center;    
+    }
+    
+    .enableEthereumButton {
+    display: inline-block;
+    margin: 5px;
+    }
+    
+    .showAccount {
+    display: inline-block;
+    margin: 5px;
+    }
+    
+    input {
+    text-align: center;
+    display: block;
+    left: 50%;
+    margin: auto;
+    margin-top: 5px;
+    }
+
+
+
+  
+
+    button {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100px;
+    }
+    
+    #people1, #price1, #address1, #people2, #price2, #address2, #people3, #price3, #address3, #people4, #price4, #address4, #people5, #price5, #address5 {
+    display: inline-block;
+    }
+
+
+.w33{
+  width:33.3%;
+  padding:0 10px;
+}
+
+footer{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  color: rgb(50, 3, 71);
+  background-color:black;
+}
+
+
+

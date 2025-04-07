@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Resistência de Produtos Térmicos</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="calculadora"> 
+    <a href="calculadorafina.html" class="botao">► Mudar para R. Finas ◄</a>  
+    <div id="estoque">
+      <div id="esquematico" style="display: none;"></div>
+      <h1>Calculadora de Potência</h1>
+      <p> Sonobel - Produtos Térmicos © </p>
+      <form>
+        <label>Quantidade de canaletas:</label>
+        <input type="number" id="quantidade_canaleta">
+        
+        <br>
+        <label>Comprimento da canaleta (metros):</label>
+        <input type="number" id="comprimento_canaleta">
+        <br>
+        <div id="esquematico" style="display: none;"></div>
+
+        <label>Tensão do produto:</label>
+        <label>(Resistências Certificadas)</label>
+        
+        <select id="tensao_escolhida">
+          <option value="110">127v</option>
+          <option value="220">220v</option>
+        </select>
+        <br>
+        <label>Quantidade de parciais (opcional):</label>
+        <input type="number" id="quantidade_parciais">
+        <br>
+        <button type="button" onclick="calcularResistencia()">► Calcular ◄</button>
+        <button type="button" id="gerarPdfBtn" onclick="gerarPDF()">▼Gerar Esquemático▼</button>
+      </form>
+      <p id="resultado"></p>
+    </div>
+  </div>
+  <script src="gerarEsquematico"></script>
+  <script src="script.js"></script>
+</body>
+</html>

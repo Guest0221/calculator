@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  header{
+    font-size: large;
+    padding: 10px;
+    background-color: black;
+    flex-wrap: wrap;
+  }
+  
+  
+  .sis {
+    width: 100%;
+    text-align: center;
+  }
+  
+  h3{
+    margin-top: -40%;
+    font-size: 30px;
+  }
+
+  .menu {
+    text-align: center;
+  }
+  
+  section.about {
+    padding-top: 50%;
+    text-align: center;
+    position: relative;
+    color: black;
+  }
+  
+  p.about{
+    margin: 30px;
+    font-size: x-large;
+  }
+footer.p{
+  margin: 0;
+  max-width: 100%;
+  font-size: 0;
+}
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    color:#551a8b;
+    background-color:black;
+  }
+  
+  
+  

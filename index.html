@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surrealist Inner Society</title>
+    
+    <link href="style.css" rel="stylesheet" />
+
+  </head>
+  
+  <body>
+
+  <header>
+    <div class="tittle">
+      <a href=""><h2>Surrealist Inner Society</h2></a>
+    </div>
+    <div class="menus">
+      <div class="menu">
+        <a href="./projects/projects.html">Projects</a>
+        <a href="./about/about.html">About</a>
+        <a href="./donation/donation.html">Donation</a>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img class="sis" src="sis-gif.gif">
+  </section>
+  
+  <div class="eyes">
+    <div class="eye">
+      <button class="ball"></button>
+  </div>
+
+
+  <footer>
+    <p>© 2022 - Surrealist Inner Society. All rights reserved.</p>
+  </footer>
+
+  <script>
+    if(window.ethereum){
+        document.querySelector('button').addEventListener('click',async ()=>{
+            try{
+            const accounts = await ethereum.request({method:'eth_requestAccounts'});
+            account = accounts[0];
+            document.querySelector('span').innerHTML=account;
+     }catch(e){}
+     })
+    }else{
+        alert("Can't log in if you don't have a Wallet!");
+    }
+
+/*     var balls = document.getElementsByClassName("ball");
+  document.onmousemove = function(){
+    var x = event.clientX * 100 / window.innerWidth + "%";
+    var y = event.clientY * 100 / window.innerHeight + "%";
+    //event.clientX => get the horizontal coordinate of the mouse
+    //event.clientY => get the Vertical coordinate of the mouse
+    //window.innerWidth => get the browser width
+    //window.innerHeight => get the browser height
+
+    for(var i=0;i<2;i++){
+      balls[i].style.left = x;
+      balls[i].style.top = y;
+      balls[i].style.transform = "translate(-"+x+",-"+y+")";
+    }
+  } */
+
+</script>
+  
+    
+  </body>
+</html>
